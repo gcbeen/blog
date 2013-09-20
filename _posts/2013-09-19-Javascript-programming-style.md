@@ -1,9 +1,8 @@
 ---
 layout: post
-category : lessons
-tagline: "Supporting tagline"
+category : javascript
 title: Javascript编程风格
-tags : [intro, beginner, jekyll, tutorial]
+tags : [javascript, beginner, tutorial]
 ---
 {% include JB/setup %}
 klsdjlksdjlkjdskldsklljadskldskl
