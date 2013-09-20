@@ -34,17 +34,20 @@ tags : [javascript, beginner, tutorial]
 	};
 </pre>
 上面的代码的原意，是要返回一个对象，但实际上返回的是undefined，因为Javascript会自动在return语句后面添加分号。为了避免这一类错误，需要写成这样：
+
 <pre>
 	return {
 		key : value;
 	};
 </pre>
 因此，
+
 <pre>
 	<strong>规则一：表示区块起首的大括号，不要另起一行。</strong>
 </pre>
 <h4>二、园括号</h4>
 园括号（parentheses）在Javascript中有两种作用，一种表示调用函数，另一种表示的值的组合（grouuping）。我们可以用空格，区分这两种不同的括号。
+
 <pre>
 	<strong>规则2：调用函数的时候，函数名与左括号之间没有空格。</strong>
 </pre>
@@ -55,7 +58,9 @@ tags : [javascript, beginner, tutorial]
 	<strong>规则4：所有的语法元素与做括号之间，都有一个空格。</strong>
 </pre>
 按照以上规则，下面的写法都是不规范的：
+
 <pre>
+
 	foo (bar)
 
 	return(a+b);
@@ -69,14 +74,16 @@ tags : [javascript, beginner, tutorial]
 </pre>
 <h4>三、分号</h4>
 分号表示语句的结束。大多数情况下，如果你省略了句的分号，Javascript会自动添加。
+
 <pre>
 	var a = 1
 </pre>
 等同于
+
 <pre>
 	var a = 1;
 </pre>
-因此，有人提倡省略句尾的分号。但麻烦的是，如果下一行的第一个字元（token）是下面五个字符之一，Javascript将不对上一行句尾添加分号：“(”、“[”、“/”、“+”和“-”。
+因此，有人提倡省略句尾的分号。但麻烦的是，如果下一行的第一个字元（token）是下面五个字符之一，Javascript将不对上一行句尾添加分号：“(”、“\[”、“/”、“+”和“-”。
 
 <pre>
 	x = y
@@ -90,11 +97,13 @@ tags : [javascript, beginner, tutorial]
 	x = y(function (){...})();
 </pre>
 因此，
+
 <pre>
 	<strong>规则5：不要省略句末的分号。</strong>
 </pre>
 <h4>四、with语句</h4>
 with可以减少代码的书写，但是会造成混淆。
+
 <pre>
 	with (o) {
 		foo = bar;
@@ -110,6 +119,7 @@ with可以减少代码的书写，但是会造成混淆。
 	foo = o.bar;
 </pre>
 这四种结果都可能发生，取决于不同的变量是否有定义。因此，
+
 <pre>
 	<strong>规则6：不要使用with语句。</strong>
 </pre>
@@ -117,6 +127,7 @@ with可以减少代码的书写，但是会造成混淆。
 Javascript有两个表示“相等”的运算符：“相等”（==）和“严格相等”（===）。
 
 因为“相等”运算符会自动转换变量类型，造成很多意想不到的情况：
+
 <pre>
 	0 == '' // true
 	1 == true //true
@@ -125,6 +136,9 @@ Javascript有两个表示“相等”的运算符：“相等”（==）和“�
 	" \t\r\n" == 0 // true
 </pre>
 因此，
+
 <pre>
 	<strong>规则7：不要使用“相等”（==）运算符，只使用“严格相等”（===）运算符。</strong>
-</pre><h4>六</h4>
+</pre>
+
+<h4>六</h4>
