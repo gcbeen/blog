@@ -1,6 +1,6 @@
 ---
 layout: post
-category : javascript
+category : [note,javascript]
 title: Javascript编程风格
 tags : [javascript, beginner, tutorial]
 ---
