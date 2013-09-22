@@ -1,0 +1,63 @@
+div.rotate {
+  width: 100px;
+  height: 75px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#div2 {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -moz-transform: rotate(30deg); /* Firefox */
+  -webkit-transform: rotate(30deg); /* Safari and Chrome */
+  -o-transform: rotate(30deg); /* Opera */
+}
+
+div#radius {
+  text-align: center;
+  border: 2px solid #a1a1a1;
+  padding: 10px 40px;
+  background: #dddddd;
+  width: 350px;
+  border-radius: 25px;
+  -moz-border-radius: 25px; /* old Firefox */
+}
+
+div#shadow {
+  width: 300px;
+  height: 100px;
+  background-color: #ff9900;
+  -moz-box-shadow: 10px 10px 5px #888888; /* old Firefox */
+  box-shadow: 10px 10px 5px #888888;
+}
+
+p#bg-size {
+  background: url("free-img/bg_flower.gif");
+  background-size: 63px 100px;
+  -moz-background-size: 63px 100px;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+
+div#expend {
+  background: url(free-img/bg_flower.gif);
+  background-size: 35% 100%;
+  -moz-background-size: 35% 100%; /* old Firefox */
+  background-repeat: no-repeat;
+}
+
+div.position {
+  border: 1px solid back;
+  padding: 35px;
+  background-image: url(free-img/bg_flower.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+div#border_box {
+  background-origin: border-box;
+}
+
+div#content_box {
+  background-origin: content-box;
+}
