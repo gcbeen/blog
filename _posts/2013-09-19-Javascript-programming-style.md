@@ -229,6 +229,19 @@ Javascript使用new命令，从构建函数生成一个对象。
 这种做法的问题是，一旦你忘了加上new,myObject()内部的this关键字就会指向全局变量，导致所有绑定在this上面的变量，都变成全局变量。
 
 <pre>
+    var userB = {
+      init: function (name) {
+        this.name = name;
+      },
+      sayHello: function() {
+        console.log('Hello '+ this.name);
+      }
+  };
+  var bob = Object.create(userB);
+  bob.init("bog");
+  bob.sayHello();
+</pre>
+<pre>
     <strong>规则12：不要使用new命令，改用Object.create()命令。</strong>
 </pre>
 如果不得不使用new，为了防止出错，最好在视觉上把构建函数与其他函数区分开来。
