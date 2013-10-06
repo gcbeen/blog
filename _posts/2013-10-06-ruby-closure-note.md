@@ -1,7 +1,7 @@
 ---
 layout: post
 category: ruby
-title: ruby-闭包
+title: ruby编程语言-ruby闭包
 tags: [note, ruby, beginner, tutorial]
 ---
 {% include JB/setup %}
