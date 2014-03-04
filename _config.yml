@@ -30,6 +30,7 @@ author:
 production_url: http://gcbeen.github.io
 #production_url: /
 
+baseurl: /
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB:
