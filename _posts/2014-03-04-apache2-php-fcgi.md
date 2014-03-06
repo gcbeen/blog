@@ -29,7 +29,7 @@ a2enmod rewrite
 
 <pre>
 
-<VirtualHost *:83>
+&ltVirtualHost *:83&gt
 
     # The location of our projects public directory.
     DocumentRoot    /var/www/project_name/public
@@ -39,16 +39,16 @@ a2enmod rewrite
     ErrorLog        /var/www/project_name/apache2/err.log
 
     # Rewrites for pretty URLs, better not to rely on .htaccess.
-    <Directory /var/www/happy-php/public>
-        <IfModule mod_rewrite.c>
+    &ltDirectory /var/www/happy-php/public&gt
+        &ltIfModule mod_rewrite.c&gt
 			Options Indexes FollowSymLinks
             RewriteEngine On
             RewriteCond %{REQUEST_FILENAME} !-f
 			RewriteRule ^(.*)$ index.php/$1 [L]
-        </IfModule>
-    </Directory>
+        &lt/IfModule&gt
+    &lt/Directory&gt
 
-</VirtualHost>
+&lt/VirtualHost&gt
 
 # terminal
 mkdir /project_path/apache2/
