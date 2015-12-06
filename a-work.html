@@ -1,0 +1,18 @@
+---
+layout: page
+title: 侃工作
+header: Posts By Category
+group: navigation
+---
+{% include JB/setup %}
+
+
+{% for category in site.categories %}
+{% if category[0] != '侃生活' and category[0] != "侃时间" %}
+  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+  <ul>
+    {% assign pages_list = category[1] %}
+    {% include JB/pages_list %}
+  </ul>
+{% endif %}
+{% endfor %}
